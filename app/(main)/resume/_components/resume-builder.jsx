@@ -153,7 +153,7 @@ export default function ResumeBuilder({ initialContent }) {
           Resume Builder
         </h1>
         <div className="space-x-2">
-          {/* <Button
+          <Button
             variant="destructive"
             onClick={handleSubmit(onSubmit)}
             disabled={isSaving}
@@ -169,7 +169,7 @@ export default function ResumeBuilder({ initialContent }) {
                 Save
               </>
             )}
-          </Button> */}
+          </Button>
           <Button onClick={generatePDF} disabled={isGenerating}>
             {isGenerating ? (
               <>
@@ -189,7 +189,7 @@ export default function ResumeBuilder({ initialContent }) {
       <Tabs value={activeTab} onValueChange={setActiveTab}>
         <TabsList>
           <TabsTrigger value="edit">Form</TabsTrigger>
-          {/* <TabsTrigger value="preview">Markdown</TabsTrigger> */}
+          <TabsTrigger value="preview">Markdown</TabsTrigger>
         </TabsList>
 
         <TabsContent value="edit">
