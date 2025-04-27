@@ -170,7 +170,7 @@ export default function ResumeBuilder({ initialContent }) {
               </>
             )}
           </Button>
-          <Button onClick={generatePDF} disabled={isGenerating}>
+          <Button onClick={generatePDF} disabled={isGenerating || activeTab !== "preview" || resumeMode !== "preview"}>
             {isGenerating ? (
               <>
                 <Loader2 className="h-4 w-4 animate-spin" />
